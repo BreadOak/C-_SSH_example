@@ -22,7 +22,7 @@ int main()
   my_ssh_session = ssh_new();
   if (my_ssh_session == NULL)
     exit(-1);
-  ssh_options_set(my_ssh_session, SSH_OPTIONS_HOST, "192.168.0.39");
+  ssh_options_set(my_ssh_session, SSH_OPTIONS_HOST, "000.000.000.00");
   ssh_options_set(my_ssh_session, SSH_OPTIONS_USER, "user");
   
   // Connect to server
@@ -46,7 +46,7 @@ int main()
  
   ///// Authenticate ourselves /////
   // password = getpass("Password: ");
-  password = (char *)"nrmk2013";
+  password = (char *)"0000";
   rc = ssh_userauth_password(my_ssh_session, NULL, password);
   if (rc != SSH_AUTH_SUCCESS)
   {
